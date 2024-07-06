@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 connectDB();
 
-app.get('/', ()=> {
+app.get('/', (req, res)=> {
   res.send("Api Ready")
 })
 app.use('/api', sensorRoutes);
