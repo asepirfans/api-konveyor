@@ -1,17 +1,53 @@
 const mongoose = require('mongoose');
 
-const sensorDataSchema = new mongoose.Schema({
-  sensor1: {
+const konveyorSchema = new mongoose.Schema({
+  ind1: {
     type: Number,
+    required: false,
   },
-  sensor2: {
+  ind2: {
     type: Number,
+    required: false,
   },
-  sensor3: {
+  kec1: {
     type: Number,
+    required: false,
   },
-  sensor4: {
+  kec2: {
     type: Number,
+    required: false,
+  },
+  kond: {
+    type: Number,
+    required: false,
+  },
+  dur: {
+    type: Number,
+    required: false,
+  },
+  konv1: {
+    type: Number,
+    required: false,
+  },
+  konv2: {
+    type: Number,
+    required: false,
+  },
+  stat: {
+    type: Number,
+    required: false,
+  },
+  table: {
+    type: Number,
+    required: false,
+  },
+  startA: {
+    type: Number,
+    required: false,
+  },
+  startB: {
+    type: Number,
+    required: false,
   },
   waktu: {
     type: Date,
@@ -19,6 +55,6 @@ const sensorDataSchema = new mongoose.Schema({
   },
 });
 
-const SensorData = mongoose.model('SensorData', sensorDataSchema);
+const DataKonveyor = mongoose.model('DataKonveyor', konveyorSchema);
 
-module.exports = SensorData;
+module.exports = DataKonveyor;
