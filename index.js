@@ -20,7 +20,7 @@ app.get('/', (req, res)=> {
 app.use('/api', sensorRoutes);
 app.use('/user', userRoutes);
 
-const port = 3000;
+const port = 3030;
 const server = app.listen(port, () => {
   console.log(`Server berjalan di port ${port}`);
 });
